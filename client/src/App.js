@@ -7,6 +7,7 @@ import Resources from "./pages/Resources";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
 import Mentorship from "./pages/Mentorship";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/resources" element={<Resources />} />
           </Routes>
         </Router>
+      <Footer />  
       </div>
     </>
   );
