@@ -1,9 +1,10 @@
 import React from "react";
+import LandingPageComponent from "../components/LandingPageComponent";
 
 const LandingPage = () => {
   return (
     <div>
-      <h1>Landing Page</h1>
+      <LandingPageComponent />
     </div>
   );
 };
