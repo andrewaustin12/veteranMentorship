@@ -1,11 +1,11 @@
 import React from 'react';
-import signup from '../components/buttons/signup';
+
 
 const Dashboard = () => {
 
   return (
     <div>
-      <signup />
+      <h1>Dashboard</h1>
     </div>
   );
 };
