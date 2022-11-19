@@ -7,19 +7,21 @@ import Resources from "./pages/Resources";
 import Dashboard from "./pages/Dashboard";
 import Navbar from "./components/Navbar";
 import Mentorship from "./pages/Mentorship";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
-    <> 
+    <>
       <div>
-      <Navbar/>
+        <Navbar />
         <Router>
           <Routes>
-              <Route exact path="/" element={<LandingPage />} />
-              <Route exact path="/dashboard" element={<Dashboard />} />
-              <Route exact path="/mentorship" element={<Mentorship />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/resources" element={<Resources />} />
+            <Route exact path="/" element={<LandingPage />} />
+            <Route exact path="/signin" element={<SignIn />} />
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/mentorship" element={<Mentorship />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </Router>
       </div>
