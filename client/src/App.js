@@ -1,11 +1,25 @@
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Register from "./pages/Register";
+import Resources from "./pages/Resources";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div >
-      <h1>home</h1>
-    </div>
+    <>
+      <div>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<LandingPage />} />
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/resources" element={<Resources />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 
