@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const landingPage = () => {
+const LandingPage = () => {
   return (
     <div>
       <h1>Landing Page</h1>
@@ -8,4 +8,4 @@ const landingPage = () => {
   );
 };
 
-export default landingPage;
+export default LandingPage;

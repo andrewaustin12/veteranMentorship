@@ -1,12 +1,27 @@
-import './App.css';
-import Navbar from './components/Navbar';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Register from "./pages/Register";
+import Resources from "./pages/Resources";
+import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div >
-      <Navbar />
-    </div>
+    <>
+      <div>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<LandingPage />} />
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/resources" element={<Resources />} />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 
