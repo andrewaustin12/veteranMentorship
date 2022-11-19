@@ -5,12 +5,14 @@ import LandingPage from "./pages/LandingPage";
 import Register from "./pages/Register";
 import Resources from "./pages/Resources";
 import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <div>
         <Router>
+          <Navbar />
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
             <Route exact path="/dashboard" element={<Dashboard />} />

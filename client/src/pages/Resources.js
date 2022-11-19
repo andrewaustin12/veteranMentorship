@@ -3,7 +3,7 @@ import React from "react";
 const Resources = () => {
   return (
     <div>
-      <h1>Resources</h1>
+      <h1>State Resources</h1>
     </div>
   );
 };
