@@ -64,7 +64,7 @@ const Footer = () => {
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
+                    <Link href="#" variant="subtitle1" underline="none" color="text.secondary">
                       {item}
                     </Link>
                   </li>
