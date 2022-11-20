@@ -10,6 +10,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
+import Link from '@mui/material/Link'
 
 const tiers = [
   {
@@ -22,7 +23,7 @@ const tiers = [
     ],
     buttonText: 'Sign up',
     buttonVariant: 'outlined',
-    buttonRoute: '/register',
+    buttonRoute: '/signup',
   },
   {
     title: 'Mentee',
@@ -110,12 +111,12 @@ function LandingPageContent() {
                 </CardContent>
                 <CardActions>
                   {/* Redirect to a route buttonURL: /register, login/, etc. */}
-                  <Button fullWidth variant={tier.buttonVariant}>
-                    {tier.buttonText}
-                    {/* Add url to /register */}
-                    
-
-                  </Button>
+                  <Link href="/register" underline="none" sx={{ flexGrow: 1 }}>
+                    <Button fullWidth variant={tier.buttonVariant}>
+                      {tier.buttonText}
+                      {/* Add url to /register */}
+                    </Button>
+                  </Link>
                 </CardActions>
               </Card>
             </Grid>
