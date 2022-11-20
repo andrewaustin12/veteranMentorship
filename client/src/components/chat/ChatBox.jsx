@@ -103,7 +103,7 @@ const ChatBox = () => {
                 <Grid item xs={12}>
                   <ListItemText
                     align="right"
-                    primary="Hey man, What's up ?"
+                    primary="Hi, I will be your new mentor.  Looking forward to getting to know you a bit"
                   ></ListItemText>
                 </Grid>
                 <Grid item xs={12}>
@@ -116,7 +116,7 @@ const ChatBox = () => {
                 <Grid item xs={12}>
                   <ListItemText
                     align="left"
-                    primary="Hey, Iam Good! What about you ?"
+                    primary="Hey, I am doing alright. Just overwhelmed with this separation process."
                   ></ListItemText>
                 </Grid>
                 <Grid item xs={12}>
@@ -129,7 +129,7 @@ const ChatBox = () => {
                 <Grid item xs={12}>
                   <ListItemText
                     align="right"
-                    primary="Cool. i am good, let's catch up!"
+                    primary="That's completely normal.  Let's schedule a time to talk this week!"
                   ></ListItemText>
                 </Grid>
                 <Grid item xs={12}>
