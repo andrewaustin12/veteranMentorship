@@ -45,7 +45,7 @@ const features = [
   {
     title: 'Finance',
     description: "Financial support for your mentees",
-    imageURL: 'https://images.unsplash.com/photo-1554672723-60f4d5d5074f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    imageURL: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     pageURL: '/finance',
   },
   {
@@ -63,7 +63,7 @@ const features = [
   {
     title: 'Career',
     description: "Career support for your mentees",
-    imageURL: 'https://images.unsplash.com/photo-1614786269829-d24616faf56d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+    imageURL: 'https://images.unsplash.com/photo-1523287562758-66c7fc58967f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     pageURL: '/career',
   },
   {
@@ -118,14 +118,11 @@ export default function Dashboard() {
             {features.map((feature) => (
               <Grid item key={feature} xs={12} sm={6} md={4}>
                 <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                  sx={{ maxWidth: 345 }}
                 >
                   <CardMedia
                     component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
+                    
                     image={feature.imageURL}
                     alt="random"
                   />
