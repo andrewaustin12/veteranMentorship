@@ -4,3 +4,15 @@
   justify-content: space-evenly;
   margin-top: 5%;
 }
+
+.NavContainer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NavContainer-pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
