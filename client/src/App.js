@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Mentorship from "./pages/Mentorship";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
+import Chat from "./pages/Chat";
 
 function App() {
   return (
@@ -20,12 +21,13 @@ function App() {
             <Route exact path="/" element={<LandingPage />} />
             <Route exact path="/signin" element={<SignIn />} />
             <Route exact path="/dashboard" element={<Dashboard />} />
+            <Route exact path="/dashboard/chat" element={<Chat />} />
             <Route exact path="/mentorship" element={<Mentorship />} />
             <Route path="/register" element={<Register />} />
             <Route path="/resources" element={<Resources />} />
           </Routes>
         </Router>
-      <Footer />  
+        <Footer />
       </div>
     </>
   );
