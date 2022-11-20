@@ -135,10 +135,7 @@ export default function Mentorship() {
                 >
                   <CardMedia
                     component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
+                    
                     image={mentor.imageURL}
                     alt="random"
                   />
