@@ -102,12 +102,12 @@ const LoginForm = () => {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link href="#" variant="body2" underline="none">
                     Forgot password?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/register" variant="body2">
+                  <Link href="/register" variant="body2" underline="none">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>
